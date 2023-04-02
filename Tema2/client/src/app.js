@@ -34,8 +34,9 @@ function run() {
       async addUser() {
         try {
           await this.usersService.post(document.getElementById('form-name').value, document.getElementById('form-city').value);
-          this.users.push(user);
+          // this.users.push(user);
           await this.getUsers();
+
         } catch (error) {
           console.error(error);
         }
